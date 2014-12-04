@@ -1,0 +1,127 @@
+/*------------------------------------*\
+    $VARIABLES
+\*------------------------------------*/
+/**
+ *
+ * Definimos y configuramos las variables CSS que vamos a utilizar
+ *
+ */
+
+
+
+
+
+/*------------------------------------*\
+    $IMAGE-DIR
+\*------------------------------------*/
+/**
+ * Con agregar esta variable a las imágenes declaradas en CSS apañamos:
+ */
+image-dir = "../img"
+
+ //Use: background-image:url("#{$image-dir}/btn.jpg");
+
+
+
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+/**
+ * Definimos elementos constantes del layout
+ */
+baselineheight =     1.5em
+baseline =          baselineheight
+gutterwidth =        24px
+pagemaxwidth =      80% //ancho maximo de la pag
+radius =             2px 
+hovertransition =    .3s //transicion
+animationtime =     .8s //tiempo de animacion
+
+
+
+/*------------------------------------*\
+    $FONT-FACE
+\*------------------------------------*/
+/**
+ * Definimos las fuentes a utilizar:
+ * $basefont para todos los textos inline
+ * $altfont para textos alternativos, como citas, intro, etc...
+ * $codefont para código
+ */
+basefont = "Helvetica Neue", Helvetica, Arial, sans-serif
+altfont = Georgia, Times, "Times New Roman"
+codefont = "Courier New", monospace
+baseheadingfont = inherit
+
+baseheadingfontweight = bold
+baseheadingfontcolor = inherit
+
+altlineheight = 1.35em
+
+/*------------------------------------*\
+    $TAMAÑOS
+\*------------------------------------*/
+/**
+ * Definimos las fuentes a utilizar:
+ * $basefont para todos los textos inline
+ * $altfont para textos alternativos, como citas, intro, etc...
+ * $codefont para código
+ */
+
+basefontsize =     16
+
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+/**
+ * Brand stuff
+ */
+basecolor      	=  	rgb(255,148,77) // Naranja
+basecolor-light = 	lighten(basecolor, 5%)
+secondary      	= 	rgb(219,216,121) // Rojo CoolVillage
+bordercolor    	= 	lighten(secondary, 50) // Verde Bordes
+compcolor      	= 	rgb(216,240,227) //
+
+/**
+ * Escala de grises
+ * A veces no queremos que el negro sea "negro" o el blanco "blanco", puedes cambiarlos.
+ */
+Black 			= rgb(0,0,0)
+superdark  		= lighten(Black, 10%)
+darkergrey 		= lighten(Black, 15%)
+darkgrey 		= lighten(Black, 25%)
+grey 			= lighten(Black, 50%)
+lightgrey 		= lighten(Black, 75%)
+lightergrey 	= lighten(Black, 90%)
+White 			= rgb(255,255,255)
+
+// Web
+//background  = 		white;
+textcolor 		= darkergrey
+textcolorstrong = Black
+
+// Links  //////////////////////
+linkcolor 		= basecolor
+linkcolorhover 	= darken(linkcolor, 10)
+linkcolorvisited= basecolor
+linkcolorfocus 	= darken(linkcolorvisited, 10)
+
+/*------------------------------------*\
+    $Breakpoints.styl
+\*------------------------------------*/
+/**
+ * Definimos los puntos de interrupción para las mediasquery:
+ * $ipads para todos los dispositivos de 768px
+ * $laptos para todos los dispositivos de 
+ * $smartphone para todos los dispositivos de 
+ */
+
+//smartphone
+$iPhone4-portrait 	=   320px
+$iPhone4-landscape 	=   480px
+//tables
+$ipads-portrait 	=	768px
+$ipads-landscape 	=	1024px
