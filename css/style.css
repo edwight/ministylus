@@ -178,17 +178,286 @@ td,
 th {
   padding: 0;
 }
-.header {
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+.header-main {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  height: 50px;
-  background-color: #ccc;
+  height: 60px;
+  background-color: #fff;
 }
-.header-der {
+.header-main-der {
   width: 30px;
-  height: 100%;
+  height: 60px;
+  background-color: #008000;
+}
+.header-main-izq {
+  width: 30px;
+  height: 60px;
   background-color: #f00;
+}
+a {
+  text-decoration: none;
+}
+.section-main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+  background-color: #00f;
+  min-height: 300px;
+}
+.article {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 120px;
+  box-shadow: 0 1px 2px #a1acbd;
+  border-radius: 2px;
+  -webkit-transition: box-shadow linear 0.3s;
+  -o-transition: box-shadow linear 0.3s;
+  transition: box-shadow linear 0.3s;
+  z-index: 600;
+}
+.article .fimg {
+  background: #f4f4f4;
+  float: left;
+  width: 100px;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 500;
+}
+.article .fimg img {
+  width: auto;
+  height: 100%;
+  display: block;
+  margin-left: -40%;
+}
+.article .contenido .autor {
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 6px 10px 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  display: inline-block;
+}
+.article .contenido .autor a {
+  color: rgba(56,56,56,0.5);
+}
+.article .contenido .title {
+  color: rgba(56,56,56,0.9);
+  padding: 25px 10px 0 110px;
+  font-weight: 700;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.1;
+  letter-spacing: normal;
+}
+.article .contenido .title a {
+  color: rgba(56,56,56,0.9);
+}
+.article .contenido .actions {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  background: #fff 50% none;
+  background-size: 100% 100%;
+  background: none, -webkit-linear-gradient(top, rgba(255,255,255,0) 0, #fff 50%);
+  background: none, linear-gradient(180deg, rgba(255,255,255,0) 0, #fff 50%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 200;
+}
+.article--first {
+  background: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  box-shadow: 0 1px 2px #a1acbd;
+  border-radius: 2px;
+  -webkit-transition: box-shadow linear 0.3s;
+  -o-transition: box-shadow linear 0.3s;
+  transition: box-shadow linear 0.3s;
+  z-index: 600;
+}
+.article--first .fimg--first {
+  background: #f4f4f4;
+  float: left;
+  width: 314px;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 500;
+}
+.article--first .fimg--first img {
+  position: relative;
+  margin: -13% 0 0;
+  height: auto;
+  min-width: 100%;
+}
+.article--first .author {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 6px 10px 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  display: inline-block;
+  color: rgba(56,56,56,0.5);
+  left: 0;
+  top: 100px;
+  z-index: 600;
+  background: #fff;
+  font-family: Lato, sans-serif;
+}
+.article--first .author a {
+  color: rgba(56,56,56,0.5);
+}
+.article--first .contenido .toPost .title {
+  font-size: 14px;
+  font-size: 1.2rem;
+  padding: 10px 10px 0;
+  clear: both;
+  letter-spacing: -0.02em;
+  line-height: 1;
+}
+.article--first .contenido .toPost .title a {
+  color: rgba(56,56,56,0.9);
+}
+.article--first .contenido .toPost .actions {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+  background: #fff 50% none;
+  background-size: 100% 100%;
+  background: none, -webkit-linear-gradient(top, rgba(255,255,255,0) 0, #fff 50%);
+  background: none, linear-gradient(180deg, rgba(255,255,255,0) 0, #fff 50%);
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 200;
+}
+.article--no {
+  background: #525f73 none;
+  background-size: 100% 100%;
+  background: none, -webkit-linear-gradient(top, #ff4513, #525f73);
+  background: none, linear-gradient(180deg, #ff4513, #525f73);
+  width: 100%;
+  height: 250px;
+  margin: 10px;
+}
+.article--no .author {
+  position: relative;
+  padding: 0 0 5px;
+  right: 15px;
+  left: auto;
+  top: 15px;
+  background: 0 0;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  z-index: 700;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  top: 75px;
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 6px 10px 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  color: rgba(56,56,56,0.5);
+}
+.article--no .fimg--no {
+  width: 200px;
+  height: 245px;
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  background: 0 0;
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.article--no .fimg--no img {
+  top: -25%;
+  width: 100%;
+  height: 500px;
+  opacity: 0.1;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  min-width: none;
+}
+.article--no:hover {
+  -webkit-transition: all ease 0.2s;
+  -o-transition: all ease 0.2s;
+  transition: all ease 0.2s;
+  background: rgba(0,0,0,0.6);
+}
+.article--no .contenido .title {
+  padding: 0 15px;
+  position: relative;
+  right: 0;
+  color: #fff !important;
+  text-align: right;
+  max-width: 80%;
+  top: 0;
+  z-index: 500;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.aside-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 300px;
+  background-color: #808000;
+  margin-top: 10px;
+  margin-right: 0;
+  margin-bottom: 10px;
+  margin-left: 0;
 }
 @media screen and (min-width: 768px) {
   body {
