@@ -5,12 +5,89 @@
 @import 'layout/header.styl'
 @import 'layout/section.styl'
 @import 'layout/aside.styl'
+@import 'base/breakpoints.styl'
 //@import 'base/fonts'
 
-@media screen and (min-width: $ipads-portrait)
+@media screen and (min-width: 600px)
 {
 	body{
 		background-color:#ccc;
+	}
+	.section-main--col1, .section-main--col2{
+		display block
+		float left
+		Center()
+		//box(100%,300px)
+		width 50%
+		background-color blue
+		min-height 300px
+
+	}
+	.section-main--col2{
+		width 50%
+		background-color red
+	}
+	.article{
+		//max-width: 400px;
+	}
+	.article--first{
+		//max-width: 400px;
+	}
+	.article--no{
+		//max-width: 400px;
+	}
+	.aside-main--col3
+	{
+		.list--col1, .list--col2, .list--col3
+		{
+			width: 32.3%;
+		}
+	}
+	.article-detalles--col1
+	{
+		width: 60%
+	}
+	.aside-detalles--col2
+	{
+		width: 35%
+	}
+
+}
+@media screen and (min-width: 1000px)
+{
+	body{
+		background-color:#ccc;
+	}
+	.section-main--col1, .section-main--col2{
+		display block
+		float left
+		Center()
+		//box(100%,300px)
+		width 40%
+		background-color blue
+		min-height 300px
+
+	}
+	.section-main--col2{
+		width 30%
+		background-color red
+		.article{
+			//max-width: 400px;
+		}
+		.article--first{
+			//max-width: 400px;
+		}
+		.article--no{
+			//max-width: 400px;
+		}
+	}
+	.aside-main--col3
+	{
+		width 25%
+		.list--col1, .list--col2, .list--col3
+		{
+			width: 100%;
+		}
 	}
 }
 
