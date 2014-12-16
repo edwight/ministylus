@@ -37,7 +37,7 @@ a
 	-o-transition box-shadow linear .3s
 	transition box-shadow linear .3s
 	z-index 600
-
+	
 	.fimg 
 		background #f4f4f4
 		float left
@@ -53,45 +53,69 @@ a
 			height 100%
 			display block
 			margin-left -40%
+
+	.author
+		font-family Lato,sans-serif
+		text-transform uppercase
+		font-size 11px
+		font-size 0.7rem
+		font-weight 700
+		margin 0
+		padding 6px 10px 5px
+		overflow hidden
+		white-space nowrap
+		position absolute
+		display inline-block
+		a
+			color rgba(56,56,56,.5)
 	.contenido
-		.autor 
-			font-family Lato,sans-serif
-			text-transform uppercase
-			font-size 11px
-			font-size 1.1rem
-			font-weight 700
-			margin 0
-			padding 6px 10px 5px
-			overflow hidden
-			white-space nowrap
-			position absolute
-			display inline-block
-			a
-				color rgba(56,56,56,.5)
 		.title	
+			//margin 0;
 			color rgba(56,56,56,.9)
-			padding 25px 10px 0 110px
+			//padding 15px 0px 0 110px
+			padding: 10px 15px 5px 115px
 			font-weight 700
 			font-size 15px
-			font-size 1.5rem
+			font-size 1.1rem
 			line-height 1.1
 			letter-spacing normal
 			a
 				color rgba(56,56,56,.9)
-		.actions
-			-webkit-box-sizing border-box
-			-moz-box-sizing border-box
-			box-sizing border-box
-			overflow hidden
-			position relative
-			background #fff 50% none
-			background-size 100% 100%
-			background none,-webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 50%)
-			background none,linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 50%)
-			position absolute;
-			width 100%
-			bottom 0
-			z-index 200
+	.actions
+		-webkit-box-sizing border-box
+		-moz-box-sizing border-box
+		box-sizing border-box
+		overflow hidden
+		position relative
+		background #fff 50% none
+		background-size 100% 100%
+		background none,-webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 50%)
+		background none,linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 50%)
+		position absolute;
+		width 100%
+		bottom 0
+		z-index 200
+		ul 
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			float: left;
+			//padding: 10px 0 5px 100px;
+			padding: 10px 15px 5px 115px
+			width: 100%;
+		ul li
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			//float: left;
+			.time
+				float left
+				//margin-left 15px
+			.category
+				float right
+				//margin-right 15px
 	
 .article--first
 	background #fff
@@ -154,20 +178,41 @@ a
 			letter-spacing -.02em
 			line-height 1
 				
-		.actions
-			-webkit-box-sizing border-box
-			-moz-box-sizing border-box
-			box-sizing border-box
-			overflow hidden
-			position relative
-			background #fff 50% none
-			background-size 100% 100%
-			background none,-webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 50%)
-			background none,linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 50%)
-			position absolute;
-			width 100%
-			bottom 0
-			z-index 200	
+	.actions
+		-webkit-box-sizing border-box
+		-moz-box-sizing border-box
+		box-sizing border-box
+		overflow hidden
+		position relative
+		background #fff 50% none
+		background-size 100% 100%
+		background none,-webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 50%)
+		background none,linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 50%)
+		position absolute;
+		width 100%
+		bottom 0
+		z-index 200	
+		ul 
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			float: left;
+			//padding: 10px 0 5px 0
+			padding: 10px 15px 5px 15px
+			width: 100%;
+		ul li
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			//float: left;
+			.time
+				float left
+				//margin-left 15px
+			.category
+				float right
+				//margin-right 15px
 
 .article--no
 	-webkit-box-sizing border-box
@@ -185,11 +230,10 @@ a
 	text-align right
 	position relative
 	.author--no
-		
 		font-family: Lato,sans-serif;
 		text-transform: uppercase;
 		font-size: 10px;
-		font-size: 1.1em;
+		font-size 0.7rem
 		font-weight: 700;
 		margin: 0;
 		padding: 6px 10px 5px;
@@ -211,6 +255,8 @@ a
 		-webkit-transition: all ease .2s;
 		-o-transition: all ease .2s;
 		transition: all ease .2s;
+		a 
+			color: #fff;
 
 
 	.fimg--no
@@ -278,17 +324,21 @@ a
 			margin: 0;
 			padding: 0;
 			float: left;
-			padding: 10px 0 0 100px;
+			//padding: 10px 0 5px 0
+			padding: 10px 15px 5px 15px
 			width: 100%;
 		ul li
 			list-style: none;
 			margin: 0;
 			padding: 0;
-			float: left;
+			//float: left;
 			.time
 				float left
-			.view
+				//margin-left 15px
+			.category
 				float right
+				//margin-right 15px
+//.......................... DETALLES ..............
 
 .article-detalles--col1
 	display block
@@ -307,7 +357,8 @@ a
 	position relative
 	opacity 1
 	box-shadow 0 1px 6px rgba(0,0,0,.2)
-	margin-left 10px
+	//margin-left 10px
+	padding-left 10px
 	.imagen-detalles
 		width 100%
 		min-height 40px
@@ -324,7 +375,11 @@ a
 		position relative
 		z-index 700
 		padding 0 20px
+		.categoria
+				display block
+				width 100%
 		.body-text
+			float left
 			padding 0 0 20px
 			max-width 620px
 			p 
@@ -334,36 +389,59 @@ a
 				color #383838
 				font-weight 400
 				font-family Lato,sans-serif
-
-			.tags
-				padding 0 0 20px
-				max-width 620px
-
-				//list-style: none
+		.author-detalles
+			width 100%
+			height 150px
+			float left
+			.img-detalles
 				display block
-				clear both
-				overflow visible
-				margin 0!important
-				position relative
-				li 
-					list-style none
-					margin 0
-					padding 0
-					float left
+				border-radius: 100%;
+				overflow: hidden;
+				width: 60px;
+				height: 60px;
+				border: 3px solid #f30;
+				float: left;
+				position: relative;
+				margin 0
+				img 
+					width 100%
+					height 100%
+			.contenido-detalles
+				display block
+				float left
+				width 50%
+				margin 0
+				padding 0
+				margin-left 10px
+		.tags
+			padding 0 0 20px
+			width 100%
 
-					font-size 1.8rem
-					line-height 1.5
-					color #383838
-				li a 
-					display block
-					padding 5px;
-					color rgba(56,56,56,.7)
-					font-size 12px
-					font-size 1.2rem
-					text-transform uppercase
-					margin-bottom 5px
-					border 1px solid transparent
-					text-align right
+			//list-style: none
+			display block
+			clear both
+			overflow visible
+			margin 0!important
+			position relative
+			li 
+				list-style none
+				margin 0
+				padding 0
+				float left
+
+				font-size 0.8rem
+				line-height 1.5
+				color #383838
+			li a 
+				display block
+				padding 5px;
+				color rgba(56,56,56,.7)
+				font-size 12px
+				font-size 0.8rem
+				text-transform uppercase
+				margin-bottom 5px
+				border 1px solid transparent
+				text-align right
 
 .aside-detalles--col2
 	float left
@@ -376,85 +454,7 @@ a
 		overflow hidden
 		margin 0
 		padding 0	
-		.list-post
-			margin 5px auto
-			max-width 100%
-
-			background #fff
-			-webkit-box-sizing border-box
-			-moz-box-sizing border-box
-			box-sizing border-box
-			padding 0
-			margin 10px
-			position relative
-			overflow hidden
-			height 120px
-			box-shadow 0 1px 2px #a1acbd
-			border-radius 2px
-			-webkit-transition box-shadow linear .3s
-			-o-transition box-shadow linear .3s
-			transition box-shadow linear .3s
-			z-index 600		
-			.by 
-				font-family Lato,sans-serif
-				text-transform uppercase
-				font-size 11px
-				font-size 1.1rem
-				font-weight 700
-				margin 0
-				padding 6px 10px 5px
-				overflow hidden
-				white-space nowrap
-				position absolute
-				display inline-block
-				color rgba(56,56,56,.5)
-			.fimg
-				background: #f4f4f4;
-				float: left;
-				width: 100px;
-				height: 120px;
-				margin: 0;
-				padding: 0;
-				overflow: hidden;
-				position: relative;
-				z-index: 500;
-			.title
-				color: rgba(56,56,56,.9);
-				padding: 25px 10px 0 110px;
-				font-weight: 700;
-				font-size: 15px;
-				font-size: 1.5rem;
-				line-height: 1.1;
-				letter-spacing: normal;
-			.actions
-				-webkit-box-sizing: border-box;
-				-moz-box-sizing: border-box;
-				box-sizing: border-box;
-				overflow: hidden;
-				position: relative;
-				background: #fff 50% none;
-				background-size: 100% 100%;
-				background: none,-webkit-linear-gradient(top,rgba(255,255,255,0) 0,#fff 50%);
-				background: none,linear-gradient(180deg,rgba(255,255,255,0) 0,#fff 50%);
-				position: absolute;
-				width: 100%;
-				bottom: 0;
-				z-index: 200;
-				ul 
-					-webkit-box-sizing: border-box;
-					-moz-box-sizing: border-box;
-					box-sizing: border-box;
-					margin: 0;
-					padding: 0;
-					float: left;
-					padding: 10px 0 0 100px;
-					width: 100%;
-				ul li
-					list-style: none;
-					margin: 0;
-					padding: 0;
-					float: left;
-
+		
 .aside-main--col3
 	display block
 	float left
@@ -468,7 +468,15 @@ a
 		display inline-block
 		width 100%
 		background-color #4876ff
+		vertical-align top
+	.list--col1
+		height 200px
+		img 
+			width 100%
+			height 100%
 	.list--col2
+		height 350px
 		background-color #cd0000
 	.list--col3
+		height 300px
 		background-color #ff8d00
