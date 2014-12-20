@@ -1,3 +1,6 @@
+body, html
+	width 100%
+	height 100%
 //@import('nib')
 @import 'base/variables.styl'
 @import 'lib/normalize.styl'
@@ -13,19 +16,20 @@
 	body{
 		background-color:#ccc;
 	}
+
 	.section-main--col1, .section-main--col2{
 		display block
 		float left
 		Center()
 		//box(100%,300px)
 		width 50%
-		background-color blue
+		//background-color blue
 		min-height 300px
 
 	}
 	.section-main--col2{
 		width 50%
-		background-color red
+		//background-color red
 	}
 	.article{
 		//max-width: 400px;
@@ -36,6 +40,38 @@
 	.article--no{
 		//max-width: 400px;
 	}
+  //section de libros
+  .section-book--col1 {
+    width: 100%;
+    float: left;
+    //margin: 20px 0px 0px 80px;
+  }
+  .book_thumbs {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;  
+
+    max-width: 100%;
+    display: block; 
+
+  }
+  .book_thumbs li {
+    max-width: 122px;
+    max-height: 192px;
+    padding-right: 15px;
+    margin-bottom: 15px;
+
+  }
+  .book_thumbs .book-big{
+    max-width: 259px;
+    max-height: 387px;
+    margin-bottom: 0;
+  }
+
+  .book_thumbs li img{
+    width:100%; 
+    height:100%; 
+  }
 	.aside-main--col3
 	{
 		.list--col1, .list--col2, .list--col3
@@ -53,10 +89,118 @@
 	}
 
 }
+//mediasquery del nav
+@media only screen and (max-width: 695px)
+{
+  .share-bar {
+  height: 35px;
+  padding: 2px 0;
+  text-align: left;
+  }
+  .navmain>li.home {
+    display none
+  }
+  .navmain>li>a {
+  padding: 15px;
+  border-top: 1px solid #3c3c3c;
+  border-right: none;
+  background: #303030;
+  }
+  .navmain a {
+  width: 100%;
+  background: #333;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  }
+  .navmain>li>.megamenu {
+  width: 100% !important;
+  position: static;
+  border-top: none;
+  }
+  .navmain ul.dropdown, .navmain ul.dropdown li ul.dropdown {
+    width: 100%;
+    left: 0;
+    position: static !important;
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 0.7em;
+    }
+  
+  .navmain>li.showhide {
+  display: block;
+  }
+  .navmain>li.home {
+  display: none;
+  }
+  .navmain>li {
+  	//..................
+  display: none;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  }
+  .navmain a {
+  width: 100%;
+  background: #333;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  }
+  .navmain>li>.megamenu {
+    width: 100% !important;
+    position: static;
+    border-top: none;
+    }
+  .navmain ul.dropdown, .navmain ul.dropdown li ul.dropdown {
+    width: 100%;
+    left: 0;
+    position: static !important;
+    border: none;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 0.65em;
+    }
+    .navmain ul.dropdown li {
+    background: #fff !important;
+    border: none;
+    width: 50%;
+    border-top: 1px solid #3c3c3c;
+    }
+    .navmain ul.dropdown, .navmain ul.dropdown li ul.dropdown {
+    font-size: 0.65em;
+    }
+    .navmain ul.dropdown li.second {
+    /*border-left: none; */
+    width: 50%;
+    border-top: 1px solid #3c3c3c;
+    border-left: 1px solid #3c3c3c;
+    }
+    .navmain ul.dropdown li {
+    box-sizing: border-box;
+    background: #fff !important;
+    border: none;
+    width: 50%;
+    //height: 45px;
+    border-top: 1px solid #3c3c3c;
+    }
+  .navmain ul.dropdown li:hover{
+    background:#ccc;
+    }
+}
 @media screen and (min-width: 1000px)
 {
 	body{
 		background-color:#ccc;
+	}
+	.contenedor{
+		width 95%
+		margin-left auto 
+		//margin-right auto
 	}
 	.section-main--col1, .section-main--col2{
 		display block
@@ -65,13 +209,13 @@
 		margin-left auto
 		//box(100%,300px)
 		width 40%
-		background-color blue
+		//background-color blue
 		min-height 300px
 
 	}
 	.section-main--col2{
 		width 30%
-		background-color red
+		//background-color red
 		.article{
 			//max-width: 400px;
 		}
@@ -82,6 +226,12 @@
 			//max-width: 400px;
 		}
 	}
+  //section libros
+  .section-book--col1 {
+    width: 70%;
+    float: left;
+    //margin: 20px 0px 0px 80px;
+  }
 	.aside-main--col3
 	{
 		margin-right auto
