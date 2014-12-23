@@ -51,57 +51,57 @@
 				<ul class="book_thumbs">
           			<li class="book-big">
                			<a href=".">
-               				<img src="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" width="259" height="387" alt="The Art of Immersion" title="The Art of Immersion">
+               				<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" alt="The Art of Immersion" title="The Art of Immersion">
                		</a>
           			</li>
           			<li>
                			<a href=".">
-                    		<img src="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" width="122" height="193" alt="The Pale King" title="The Pale King">
+                    		<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    		<img src="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" width="122" height="186" alt="The Pale King" title="The Pale King">
+                    		<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    		<img src="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    		<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           			<li>
                			<a href=".">
-                    	<img src="/images/books/in_the_year_of_the_long_division.thumb.jpg" width="122" height="183" alt="In The Year Of The Long Division" title="In The Year Of The Long Division">
+                    	<img class="lazy" data-original="http://static.betazeta.com/www.fayerwayer.com/up/2014/12/terminator-genysis-1-320x210.jpg" title="The Pale King">
                			</a>
           			</li>
           		</ul>
@@ -138,6 +138,17 @@
           }
       });
     </script>
+    <!-- carga lazyload -->
+    <script src="js/lazyload.min.js" type="text/javascript"></script>
+     <script type="text/javascript">
+    	$(function() {
+    		$("img.lazy").lazyload({
+     			container: $(".section-book--col1"),
+     			effect: "fadeIn"
+				});		 
+		});
+    </script>
+
      <script src="js/plugins.js"></script>
      <script src="js/main.js"></script>
 	</body>

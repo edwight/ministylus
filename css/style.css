@@ -519,7 +519,7 @@ a {
   margin: 10px;
   position: relative;
   overflow: hidden;
-  height: 300px;
+  height: 260px;
   box-shadow: 0 1px 2px #a1acbd;
   border-radius: 2px;
   -webkit-transition: box-shadow linear 0.3s;
@@ -620,7 +620,7 @@ a {
   background-size: 100% 100%;
   background: none, -webkit-linear-gradient(top, #138aff, #525f73);
   background: none, linear-gradient(top, #138aff, #525f73);
-  height: 250px;
+  height: 260px;
   margin: 10px;
   border-radius: 2px;
   text-align: right;
@@ -932,8 +932,7 @@ a {
   body {
     background-color: #ccc;
   }
-  .section-main--col1,
-  .section-main--col2 {
+  .section-main--col1 {
     display: block;
     float: left;
     margin-left: auto;
@@ -941,8 +940,8 @@ a {
     width: 50%;
     min-height: 300px;
   }
-  .section-main--col2 {
-    width: 50%;
+  .section-main--col1 {
+    width: 100%;
   }
   .section-book--col1 {
     width: 100%;
@@ -1091,16 +1090,24 @@ a {
     width: 95%;
     margin-left: auto;
   }
-  .section-main--col1,
-  .section-main--col2 {
+  .section-main--col1 {
     display: block;
     float: left;
     margin-left: auto;
-    width: 40%;
+    width: 70%;
     min-height: 300px;
   }
-  .section-main--col2 {
-    width: 30%;
+  .section-main--col1 .article {
+    float: left;
+    width: 46%;
+  }
+  .section-main--col1 .article--first {
+    float: left;
+    width: 46%;
+  }
+  .section-main--col1 .article--no {
+    float: left;
+    width: 46%;
   }
   .section-book--col1 {
     width: 70%;
