@@ -5,6 +5,7 @@ body, html
 @import 'base/variables.styl'
 @import 'lib/normalize.styl'
 @import 'base/mixins.styl'
+@import 'layout/login.styl'
 @import 'layout/header.styl'
 @import 'layout/section.styl'
 @import 'layout/aside.styl'
@@ -13,33 +14,24 @@ body, html
 
 @media screen and (min-width: 600px)
 {
-	body{
-		background-color:#ccc;
-	}
-
-	.section-main--col1{
-		display block
-		float left
-		Center()
-		//box(100%,300px)
-		width 50%
-		//background-color blue
-		min-height 300px
-
-	}
-	.section-main--col1{
-		width 100%
-		//background-color red
-	}
-	.article{
-		//max-width: 400px;
-	}
-	.article--first{
-		//max-width: 400px;
-	}
-	.article--no{
-		//max-width: 400px;
-	}
+  .section-main--col1
+  {
+    display block
+    float left
+    margin-left auto
+    width 100%
+    min-height 300px
+  }
+  .section-main--col1
+  {
+    //background-color red
+    .article, .article--first, .article--no
+    {
+      float: left;
+      width: 46%;
+      //max-width: 400px;
+    }
+  }
   //section de libros
   .section-book--col1 {
     width: 100%;
@@ -203,15 +195,12 @@ body, html
 		//margin-right auto
 	}
 	.section-main--col1{
-		display block
-		float left
 		//Center()
 		margin-left auto
 		//box(100%,300px)
 		width 70%
 		//background-color blue
-		min-height 300px
-
+	
 	}
 	.section-main--col1{
 		//background-color red
