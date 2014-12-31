@@ -9,12 +9,13 @@ body, html
 @import 'layout/header.styl'
 @import 'layout/section.styl'
 @import 'layout/aside.styl'
+@import 'layout/carrusel/slide.styl'
 @import 'base/breakpoints.styl'
 //@import 'base/fonts'
 
 @media screen and (min-width: 600px)
 {
-  .section-main--col1
+  .section-main--col1, .section-main--col2
   {
     display block
     float left
@@ -194,7 +195,7 @@ body, html
 		margin-left auto 
 		//margin-right auto
 	}
-	.section-main--col1{
+	.section-main--col1, .section-main--col2{
 		//Center()
 		margin-left auto
 		//box(100%,300px)
@@ -204,17 +205,7 @@ body, html
 	}
 	.section-main--col1{
 		//background-color red
-		.article{
-      float: left;
-      width: 46%;
-			//max-width: 400px;
-		}
-		.article--first{
-      float: left;
-      width: 46%;
-			//max-width: 400px;
-		}
-		.article--no{
+		.article, .article--first, .article--no{
       float: left;
       width: 46%;
 			//max-width: 400px;
